@@ -1,0 +1,13 @@
+{
+  "name": "quote-node",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types index.ts",
+    "verify": "node --experimental-strip-types verify.ts"
+  },
+  "dependencies": {
+    "@lunya/sdk": "workspace:*",
+    "viem": "^2.55.5"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "curve-bot",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "node --experimental-strip-types index.ts" },
+  "dependencies": { "@lunya/sdk": "workspace:*", "viem": "^2.55.5" }
+}

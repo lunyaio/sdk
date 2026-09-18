@@ -1,0 +1,63 @@
+{
+  "name": "@lunya/sdk-react",
+  "version": "0.1.0-alpha.2",
+  "description": "React bindings for @lunya/sdk — wagmi + TanStack Query hooks for the Lunya exchange and launchpad.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lunyaio/sdk.git",
+    "directory": "packages/react"
+  },
+  "homepage": "https://github.com/lunyaio/sdk#readme",
+  "bugs": {
+    "url": "https://github.com/lunyaio/sdk/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "pnpm build"
+  },
+  "dependencies": {
+    "@lunya/sdk": "workspace:*"
+  },
+  "peerDependencies": {
+    "@tanstack/react-query": "^5.0.0",
+    "react": ">=18",
+    "viem": "^2.21.0",
+    "wagmi": ">=2"
+  },
+  "devDependencies": {
+    "@tanstack/react-query": "^5.101.4",
+    "@types/react": "^19.0.1",
+    "react": "^19.2.4",
+    "typescript": "^5.7.2",
+    "viem": "^2.55.5",
+    "wagmi": "^3.7.3"
+  },
+  "keywords": [
+    "lunya",
+    "dex",
+    "launchpad",
+    "react",
+    "wagmi",
+    "hooks"
+  ]
+}

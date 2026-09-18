@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "outDir": ".test-out", "declaration": false, "declarationMap": false }
+}

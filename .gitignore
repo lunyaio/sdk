@@ -1,0 +1,15 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.local
+.DS_Store
+.test-out/
+
+# Maintainer tooling for rebuilding src/generated/. Not needed to build or use
+# this package, and not part of this repository.
+scripts/
+
+# A project .npmrc is where a publish token gets committed by accident. Tokens
+# belong in ~/.npmrc, outside the repository.
+.npmrc

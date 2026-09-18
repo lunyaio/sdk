@@ -1,0 +1,13 @@
+{
+  "name": "next-widget",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@lunya/sdk": "workspace:*",
+    "@lunya/sdk-react": "workspace:*",
+    "@tanstack/react-query": "^5.101.4",
+    "react": "^19.2.4",
+    "viem": "^2.55.5",
+    "wagmi": "^3.7.3"
+  }
+}
